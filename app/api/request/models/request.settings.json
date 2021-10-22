@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "name": "request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "person": {
+      "type": "enumeration",
+      "enum": [
+        "morador",
+        "sindico",
+        "sindico_profissional"
+      ]
+    }
+  }
+}
